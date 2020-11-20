@@ -1,5 +1,5 @@
 void setup() {
-  size(800, 800);
+  fullScreen();
   noStroke();
   colorMode(HSB, 360,100,100);
   setup_spark2();
