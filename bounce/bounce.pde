@@ -1,18 +1,16 @@
 void setup() {
   size(800, 800);
   noStroke();
-  colorMode(HSB);
+  colorMode(HSB, 360,100,100);
   setup_spark();
-  setup_ball();
+  setup_ball3();
 }
 
 void draw() {
-
+  //colorMode(HSB, 360,100,100);
   background(table);
   spark();
-  ball();
-  text(vig/vig_base,100,100);
+  heat();
+  ball3();
+  text(vig / vig_base, 100, 100);
 }
-
-//テスト
-//buranti4

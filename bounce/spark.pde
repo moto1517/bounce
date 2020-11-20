@@ -1,14 +1,15 @@
 int MAX_PARTICLES;
-color[] c = {#69D2E7, #A7DBD8, #E0E4CC, #F38630, #FA6900, #FF4E50, #F9D423};
+color[] c;
 ArrayList<Particle> p = new ArrayList<Particle>();
 
 void setup_spark() {
   MAX_PARTICLES = diam + 20;
-}
+  c = new color[] {color(190, 54, 90), color(176, 23, 85), color(70, 10, 89), color(26, 80, 95), color(25, 100, 98), color(359, 69, 100), color(49, 85, 97)};
+    }
 
-void spark() {
+    void spark() {
 
-  if (count!=0) {
+      if (count!=0) {
     p.add( new Particle(width/2, (int)y, MAX_PARTICLES, c[(int)random(0, 7)]) );
   }
 
