@@ -1,4 +1,4 @@
-int MAX_PARTICLES;
+/*int MAX_PARTICLES;
 color[] c;
 ArrayList<Particle> p = new ArrayList<Particle>();
 
@@ -69,4 +69,4 @@ class Particle {
   int getCnt() {
     return cnt;
   }
-}
+}*/
