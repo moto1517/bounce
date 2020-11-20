@@ -1,13 +1,13 @@
-int MAX_PARTICLES;
+/*int MAX_PARTICLES;
 color[] c;
 ArrayList<Particle> p = new ArrayList<Particle>();
 
-void setup_spark2() {
+void setup_spark3() {
 	MAX_PARTICLES = diam + 20;
 	c = new color[] {color(190, 54, 90), color(176, 23, 85), color(70, 10, 89), color(26, 80, 95), color(25, 100, 98), color(359, 69, 100), color(49, 85, 97)};
 }
 
-void spark2() {
+void spark3() {
 	
 	if (count!= 0) {
 		p.add(new Particle(width / 2,(int)y, MAX_PARTICLES,ball,vig));
@@ -50,8 +50,8 @@ class Particle {
 		position2 = new PVector(x, y);
 		position3 = new PVector(x, y);
 		velocity1 = new PVector(random( - 10, 10) * amount / vig_base, random( - 10, 10) * amount / vig_base);
-		velocity2 = new PVector(random( - 10, 10) * amount / vig_base, random( - 10, 10) * amount / vig_base);
-		velocity3 = new PVector(random( - 10, 10) * amount / vig_base, random( - 10, 10) * amount / vig_base);
+		velocity2 = new PVector(random( - 15, 15) * amount / vig_base, random( - 15, 15) * amount / vig_base);
+		velocity3 = new PVector(random( - 20, 20) * amount / vig_base, random( - 20, 20) * amount / vig_base);
 	}
 	
 	void update() {
@@ -67,23 +67,16 @@ class Particle {
 	void display() {
 		
 		fill(c, 220);
-		if (MAX_PARTICLES - 10 < cnt) {
-			//float sz = random( s-10, s+10 );
-			//ellipse(x +random(-5, 5), y +random(-5, 5), sz, sz );
-			
-			fill(255, 220);
-			//ellipse(x +random(-5, 5), y +random(-5, 5), sz-50, sz-50 );
-		}
-		ellipse(position1.x, position1.y,cnt / 15,cnt / 15);
+		ellipse(position1.x, position1.y,cnt / 16,cnt / 16);
 		if (amount > 40) {
-			ellipse(position2.x, position2.y,cnt / 10 ,cnt / 10);
+			ellipse(position2.x, position2.y,cnt / 13 ,cnt / 13);
 		}
 		if (amount > 80) {
-			ellipse(position3.x, position3.y,cnt / 8,cnt / 8);
+			ellipse(position3.x, position3.y,cnt / 9,cnt / 9);
 		}
 	}
 	
 	int getCnt() {
 		return cnt;
 	}
-}
+}*/
