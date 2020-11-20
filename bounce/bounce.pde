@@ -13,3 +13,5 @@ void draw() {
   ball();
   text(vig/vig_base,100,100);
 }
+
+//テスト
